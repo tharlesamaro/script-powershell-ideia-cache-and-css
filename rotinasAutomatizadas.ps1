@@ -143,8 +143,10 @@ function service-off
         $arrService.Refresh()
 
         if ( $arrService.Status -eq 'Stopped' ) {
+	
             write-host $arrService.status
-            show-message-success
+            
+	    show-message-success
         }
     }
 }
